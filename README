@@ -1,4 +1,4 @@
-Scripts to run the TILT transfer experiments
+Scripts to run the TILT transfer experiments from Papadimitriou and Jurafsky 2020, Learning Music Helps You Read: Using transfer to study linguistic structure in language models https://arxiv.org/abs/2004.14601
 
 pretrain.py trains a model on a language, assuming you have already made the corpus object wth corpora/make_corpus_object.py and have it in corpora/pickled_files. 
 
