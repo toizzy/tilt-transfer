@@ -1,0 +1,2 @@
+NOTE: The maestro corpus can be read directly from its downloaded form in the
+Corpus object constructor

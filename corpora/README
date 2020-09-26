@@ -1,0 +1,13 @@
+In this codebase, corpora have three stages:
+    1) Raw data, as it's downloaded from whatever source. Like a Wikipedia HTML dump for natural language corpora.
+    2) Clean, tokenized corpus files, where tokens are space-separated.
+    3) Corpus python objects, defined in data.py. These are what the actual experiment runs process. Pickled versions of these objects stored in pickled_files
+
+
+This is where all of the code for creating the corpora is. It is split into:
+    - constructed_corpora: the code for creating the constructed corpora: random baselines, and the parentheses. These are creates straight into Corpus objects.
+    - create_wiki_corpus: the code for downloading and parsing an Wikipedia dump to create our language corpora. 
+    - data.py: the Corpus and Dictionary classes, mostly as they appear in the Salesforce awd-lm repo
+    - make_corpus_object.py: create a Corpus object
+    - process_corpora: Code to process already existing Corpus objects. Culling the vocab and shuffling the vocab indices.
+    - raw_to_tokens: This takes the raw, downloaded form of a corpus (1) and and creates a space-separated tokenized file (2). The Corpus class in data.py then parses these files into a Corpus object.
