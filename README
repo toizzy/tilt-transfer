@@ -13,3 +13,5 @@ frozen_l2_train.py --pretrain pt --finetune es --trials 0 5
 The repo uses relative paths, so that there can be a shared system of naming and saving in models/ and corpora/pickled_files to make everything easier. However, due to this, for any of this to work you must run these scripts FROM THE DIRECTORY THAT THIS README IS IN.
 
 All other scripts should be run from the directory in which they appear, eg cd corpora/raw_to_tokens; python process_code_corpus.py rather than python corpora/raw_to_tokens/process_code_corpus.py 
+
+The music dataset, MAESTRO, was converted from MIDI to token indices using Chris Donahue's code here https://colab.research.google.com/drive/1CCb-t-uB6ZnqUJaLzVQAylJ3Tkd3iRG4?usp=sharing.
